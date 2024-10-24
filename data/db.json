@@ -1,0 +1,39 @@
+{
+    "blogs": [
+        {
+            "title": "My Journey",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "author": "apoorv",
+            "id": 1
+        },
+        {
+            "title": "My life",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "author": "aishwary",
+            "id": 2
+        },
+        {
+            "title": "Mai hoon khalnayak",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "author": "ayushi",
+            "id": 3
+        }
+    ],
+    "users": [
+        {
+            "user": "Apoorv",
+            "userType": "admin",
+            "mail": "apoorvjaiswal56@gmail.com"
+        },
+        {
+            "user": "Ayushi",
+            "userType": "user",
+            "mail": "ayushi3197@gmail.com"
+        },
+        {
+            "user": "Aishwary",
+            "userType": "reviewer",
+            "mail": "jaiswalaishwary683@gmail.com"
+        }
+    ]
+}
