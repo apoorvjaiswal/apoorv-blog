@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 interface IBlog {
   id: number;
   title: string;
+  author:string;
   body: string;
 }
 interface IBlogListProps {
