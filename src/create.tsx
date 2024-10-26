@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useFetch from './useFetch';
+import { useNavigate } from 'react-router-dom';
 
 interface ICreateComponent {
   handleSubmit?: any;
@@ -10,15 +11,32 @@ const CreateComponent: React.FC<ICreateComponent> = ({}) => {
   const [blogBody,setBlogBody]=useState('');
   const [triggerFetch,setTriggerFetch] = useState(false);
   const url='http://localhost:8000/blogs';
+  const navigate = useNavigate();
 
-  useEffect(()=>{
-    const { data, error, isPending } = useFetch({ url:url, method :'GET', body : null })
-  },[triggerFetch])
+  // Initialize useFetch at the top level
+  const { data, error, isPending } = useFetch({
+    url: url,
+    method: 'POST',
+    body: triggerFetch && (blogTitle && selectedOption && blogBody)? { title:blogTitle,author:selectedOption, body:blogBody } : null,  // Send body only when triggerFetch is true
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setTriggerFetch(true);
+    navigate(0);
+  };
+
+  // Reset triggerFetch after each fetch operation
+  useEffect(() => {
+    if (triggerFetch) {
+      setTriggerFetch(false);
+    }
+  }, [triggerFetch]);
 
   return (
     <div>
         <h1>Add a new Blog</h1>
-        <form onSubmit={useFetch}>
+        <form onSubmit={handleSubmit}>
         <p> Add Blog title {blogTitle}</p>
         <input 
         type='text'
@@ -44,7 +62,6 @@ const CreateComponent: React.FC<ICreateComponent> = ({}) => {
         required
         onChange={(e)=>{setBlogBody(e.target.value)}} ></textarea>
         <br/>
-        
         <button>Submit</button>
         </form>
     </div>

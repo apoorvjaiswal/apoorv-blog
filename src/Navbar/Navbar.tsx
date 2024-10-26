@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <>
     <div className="navbar">
-        <h1>DOJO blogs</h1>
+        <h1>Apoorv Jaiswal Blogs</h1>
         <div className="links">
             <Link to="/">Home</Link>
             <Link to="./create">Create Blog</Link>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 interface IBlog {
   id: number;
   title: string;
@@ -12,6 +12,15 @@ interface IBlogListProps {
   handledelete?: any;
 }
 const BlogList: React.FC<IBlogListProps> = ({ blogs, title, handledelete }) => {
+  
+  const navigate = useNavigate();
+  const handleDelete=(id:Number)=>{
+    fetch('http://localhost:8000/blogs/' + id,{
+      method: 'DELETE'
+    })
+    navigate(0);
+  }
+  
   return (
     <div className="blog-list">
       <h1>{title}</h1>
@@ -20,7 +29,9 @@ const BlogList: React.FC<IBlogListProps> = ({ blogs, title, handledelete }) => {
           <div className="blog-preview" key={blog.id}>
             <h2>{blog.title}</h2>
             <p>Written by {blog.author}</p>
-            <button onClick={() => (handledelete(blog.id))}>Delete</button>
+            <Link to='/'>
+            <button onClick={(e) => {handleDelete(blog.id)}}>Delete</button>
+            </Link>
           </div>
         </Link>
       ))}
