@@ -23,7 +23,7 @@ const BlogDetails: React.FC<IBlogDetails> = ({}) => {
     {error && <h1> OOPS! Unable to fetch the blog</h1>}
     {data && 
       <div>
-    <h1>Blog number {blog?.id}</h1>
+    <h1>Title {blog?.title}</h1>
     <br></br>
     <h3>Authored By: {blog?.author}</h3>
     <br></br>

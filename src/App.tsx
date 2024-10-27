@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-ro
 import CreateComponent from './create';
 import BlogDetails from './BlogDetails';
 import { json } from 'stream/consumers';
+import EditBlog from './EditBlog';
 
 function App() {
   const handleSubmit=async ()=>{
@@ -28,6 +29,7 @@ function App() {
             // handleSubmit={handleSubmit}
             />}/>
             <Route path="/:id" element={<BlogDetails/>}/>
+            <Route path='/edit/:id' element={<EditBlog/>}/>
           </Routes>
         </div>
 

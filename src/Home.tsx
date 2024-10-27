@@ -12,7 +12,7 @@ function Home() {
     <div className="home">
       {error && <div><h1>{error}</h1></div>}
       {isPending && <div>Loading...</div>}
-      {data && (<div>
+      {data && (<div className="blogListContainer" style={{display : 'flex'}}>
         <BlogList blogs={data} title="All Blogs" />
         <BlogList blogs={data.filter((blog: any) => blog.author === 'apoorv')} title="My Blogs" />
       </div>

@@ -1,34 +1,28 @@
 {
   "blogs": [
     {
-      "title": "My Journey",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "author": "apoorv",
-      "id": "1"
-    },
-    {
-      "title": "My life",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "author": "aishwary",
-      "id": "2"
-    },
-    {
-      "title": "Mai hoon khalnayak",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "author": "ayushi",
-      "id": "3"
-    },
-    {
-      "id": "2b0c",
-      "title": "dhwhf",
-      "author": "ayushi",
-      "body": "sdfdsc"
-    },
-    {
       "id": "428c",
       "title": "Dinno and Aliens",
       "author": "aishwary",
-      "body": "Dino is a miniature form of a herbivores dinosaur. They are quite hardworking.\nand aliens are some celestial beings who regularly attack earth.\nDinos help keep the earth safe"
+      "body": "Dino is a miniature form of a herbivores dinosaur. They are quite hardworking.\nand aliens are some celestial beings who regularly attack earth.\nDinos help keep the earth safe by shooing aliens away"
+    },
+    {
+      "id": "b504",
+      "title": "Diljale",
+      "author": "aishwary",
+      "body": "Do diljale, chutiya bane"
+    },
+    {
+      "id": "9085",
+      "title": "raja aur rani",
+      "author": "aishwary",
+      "body": "Ek raja tha,\nEk Rani thi \nDono mar gaye, Khatam kahani thi"
+    },
+    {
+      "id": "8ed0",
+      "title": "Cheetah hi kehde",
+      "author": "ayushi",
+      "body": "Meghalaya ke jungalo mein ek aadamkhor baagh ka aatank macha hua tha. Desh bhar se kayi shikari bukaye gaye par koi na maar paya.\nRamu naam ke ek kisan ne baagh pakadne ki zimmedari li.\nUsne apni bakri ko rassi se baandh diya ."
     }
   ],
   "users": [
