@@ -1,6 +1,3 @@
-Here's a concise `README.md` for your blog application:
-
----
 
 # React Blog Application
 
